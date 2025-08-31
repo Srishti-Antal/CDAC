@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fdee;
+        }
+        .card-image-placeholder {
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            background-color: #e0f2fe;
+            border-bottom: 1px solid #bae6fd;
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Login Modal - Initially hidden -->
+    <div id="login-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-sm mx-auto">
+            <div class="flex justify-end">
+                <button id="close-modal" class="text-gray-400 hover:text-gray-600 transition-colors duration-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <h4 class="text-2xl font-bold text-center text-emerald-700 mb-6">Log In / Sign Up</h4>
+            <form class="space-y-4">
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-emerald-500 focus:border-emerald-500">
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-emerald-500 focus:border-emerald-500">
+                </div>
+                <button type="submit" class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 transition-colors duration-200">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg py-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-emerald-600">Healthy Bites</h1>
+            <nav class="space-x-4 flex items-center">
+                <a href="#recipes" class="text-gray-600 hover:text-emerald-500 font-semibold transition-colors duration-300">Recipes</a>
+                <a href="#" class="text-gray-600 hover:text-emerald-500 font-semibold transition-colors duration-300">About</a>
+                <button id="login-btn" class="px-4 py-2 bg-emerald-500 text-white rounded-lg shadow-md hover:bg-emerald-600 transition-colors duration-300 font-medium">Log In / Sign Up</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="py-12 bg-emerald-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+                Nourish Your Body, Delight Your Taste Buds
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                Explore a collection of delicious and easy-to-make healthy recipes from trusted sources, designed to fuel your life.
+            </p>
+        </div>
+    </main>
+
+    <!-- Recipes Grid Section -->
+    <section id="recipes" class="py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-3xl font-bold text-center text-emerald-700 mb-10">Our Favorite Healthy Recipes</h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Recipe Card 1: Baked Salmon with Asparagus -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder. Replace this div with an image tag for a real photo. -->
+                    <!-- Example: <img src="your-salmon-image.jpg" alt="Baked Salmon with Asparagus" class="w-full h-64 object-cover"> -->
+                    <div class="card-image-placeholder">🐟</div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-2">Baked Salmon with Asparagus</h4>
+                        <p class="text-gray-600 text-sm mb-4">
+                            A quick and easy one-pan meal packed with lean protein and nutrients. Perfect for a weeknight dinner.
+                        </p>
+                        <div class="flex justify-between items-center text-sm text-gray-500 mb-4">
+                            <span>Prep: 10 mins</span>
+                            <span>Cook: 15 mins</span>
+                        </div>
+                        <h5 class="text-lg font-semibold text-gray-800 mb-2">Ingredients</h5>
+                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1 mb-4">
+                            <li>1 lb (450g) salmon fillets</li>
+                            <li>1 bunch asparagus, trimmed</li>
+                            <li>2 tbsp olive oil</li>
+                            <li>2 cloves garlic, minced</li>
+                            <li>1/2 lemon, sliced</li>
+                            <li>1/2 tsp salt and 1/4 tsp black pepper</li>
+                        </ul>
+                        <div class="flex justify-end">
+                            <a href="#" class="inline-block px-4 py-2 bg-emerald-500 text-white rounded-lg shadow hover:bg-emerald-600 transition-colors duration-300 font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 2: Avocado Toast with Cherry Tomatoes -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder. Replace this div with an image tag for a real photo. -->
+                    <!-- Example: <img src="your-avocado-toast.jpg" alt="Avocado Toast" class="w-full h-64 object-cover"> -->
+                    <div class="card-image-placeholder">🥑</div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-2">Avocado Toast</h4>
+                        <p class="text-gray-600 text-sm mb-4">
+                            A classic healthy breakfast or snack, full of healthy fats and fiber to keep you full and energized.
+                        </p>
+                        <div class="flex justify-between items-center text-sm text-gray-500 mb-4">
+                            <span>Prep: 5 mins</span>
+                            <span>Cook: 5 mins</span>
+                        </div>
+                        <h5 class="text-lg font-semibold text-gray-800 mb-2">Ingredients</h5>
+                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1 mb-4">
+                            <li>1 ripe avocado</li>
+                            <li>2 slices whole-grain bread, toasted</li>
+                            <li>1/2 cup cherry tomatoes, halved</li>
+                            <li>A pinch of red pepper flakes</li>
+                            <li>1/4 tsp salt and black pepper</li>
+                        </ul>
+                        <div class="flex justify-end">
+                            <a href="#" class="inline-block px-4 py-2 bg-emerald-500 text-white rounded-lg shadow hover:bg-emerald-600 transition-colors duration-300 font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 3: Chicken and Veggie Stir-Fry -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder. Replace this div with an image tag for a real photo. -->
+                    <!-- Example: <img src="your-stir-fry.jpg" alt="Chicken and Veggie Stir-Fry" class="w-full h-64 object-cover"> -->
+                    <div class="card-image-placeholder">🥡</div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-2">Chicken & Veggie Stir-Fry</h4>
+                        <p class="text-gray-600 text-sm mb-4">
+                            A versatile and quick dinner that's packed with vitamins and protein. Use whatever veggies you have on hand!
+                        </p>
+                        <div class="flex justify-between items-center text-sm text-gray-500 mb-4">
+                            <span>Prep: 15 mins</span>
+                            <span>Cook: 15 mins</span>
+                        </div>
+                        <h5 class="text-lg font-semibold text-gray-800 mb-2">Ingredients</h5>
+                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1 mb-4">
+                            <li>1 lb (450g) boneless, skinless chicken breast, cubed</li>
+                            <li>1 tbsp sesame oil</li>
+                            <li>2 cups mixed vegetables (broccoli, bell peppers, carrots)</li>
+                            <li>1/4 cup low-sodium soy sauce or tamari</li>
+                            <li>1 tbsp minced fresh ginger</li>
+                            <li>2 cloves minced garlic</li>
+                        </ul>
+                        <div class="flex justify-end">
+                            <a href="#" class="inline-block px-4 py-2 bg-emerald-500 text-white rounded-lg shadow hover:bg-emerald-600 transition-colors duration-300 font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 4: Mediterranean Lentil Soup -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder. Replace this div with an image tag for a real photo. -->
+                    <!-- Example: <img src="your-lentil-soup.jpg" alt="Mediterranean Lentil Soup" class="w-full h-64 object-cover"> -->
+                    <div class="card-image-placeholder">🍲</div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-2">Mediterranean Lentil Soup</h4>
+                        <p class="text-gray-600 text-sm mb-4">
+                            A comforting and nutritious soup with lentils and a medley of Mediterranean vegetables.
+                        </p>
+                        <div class="flex justify-between items-center text-sm text-gray-500 mb-4">
+                            <span>Prep: 10 mins</span>
+                            <span>Cook: 30 mins</span>
+                        </div>
+                        <h5 class="text-lg font-semibold text-gray-800 mb-2">Ingredients</h5>
+                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1 mb-4">
+                            <li>1 cup brown lentils, rinsed</li>
+                            <li>2 carrots, diced</li>
+                            <li>2 celery stalks, diced</li>
+                            <li>1 can (15 oz) diced tomatoes</li>
+                            <li>4 cups low-sodium vegetable broth</li>
+                        </ul>
+                        <div class="flex justify-end">
+                            <a href="#" class="inline-block px-4 py-2 bg-emerald-500 text-white rounded-lg shadow hover:bg-emerald-600 transition-colors duration-300 font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 5: Tropical Green Smoothie Bowl -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder. Replace this div with an image tag for a real photo. -->
+                    <!-- Example: <img src="your-smoothie-bowl.jpg" alt="Tropical Green Smoothie Bowl" class="w-full h-64 object-cover"> -->
+                    <div class="card-image-placeholder">🥭</div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-2">Tropical Green Smoothie Bowl</h4>
+                        <p class="text-gray-600 text-sm mb-4">
+                            A refreshing, nutrient-dense breakfast bowl that feels like a treat.
+                        </p>
+                        <div class="flex justify-between items-center text-sm text-gray-500 mb-4">
+                            <span>Prep: 5 mins</span>
+                            <span>Cook: 0 mins</span>
+                        </div>
+                        <h5 class="text-lg font-semibold text-gray-800 mb-2">Ingredients</h5>
+                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1 mb-4">
+                            <li>1 cup frozen mango chunks</li>
+                            <li>1 cup fresh spinach</li>
+                            <li>1 frozen banana</li>
+                            <li>1/2 cup unsweetened almond milk</li>
+                            <li>Assorted fresh fruit for topping</li>
+                        </ul>
+                        <div class="flex justify-end">
+                            <a href="#" class="inline-block px-4 py-2 bg-emerald-500 text-white rounded-lg shadow hover:bg-emerald-600 transition-colors duration-300 font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 6: Roasted Sweet Potato and Kale -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder. Replace this div with an image tag for a real photo. -->
+                    <!-- Example: <img src="your-roasted-veggies.jpg" alt="Roasted Sweet Potato and Kale" class="w-full h-64 object-cover"> -->
+                    <div class="card-image-placeholder">🍠</div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-2">Roasted Sweet Potato & Kale</h4>
+                        <p class="text-gray-600 text-sm mb-4">
+                            A simple and delicious side dish that pairs perfectly with almost any protein.
+                        </p>
+                        <div class="flex justify-between items-center text-sm text-gray-500 mb-4">
+                            <span>Prep: 10 mins</span>
+                            <span>Cook: 25 mins</span>
+                        </div>
+                        <h5 class="text-lg font-semibold text-gray-800 mb-2">Ingredients</h5>
+                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1 mb-4">
+                            <li>2 medium sweet potatoes, cubed</li>
+                            <li>1 bunch kale, stemmed and chopped</li>
+                            <li>2 tbsp olive oil</li>
+                            <li>1 tsp smoked paprika</li>
+                            <li>Salt and black pepper to taste</li>
+                        </ul>
+                        <div class="flex justify-end">
+                            <a href="#" class="inline-block px-4 py-2 bg-emerald-500 text-white rounded-lg shadow hover:bg-emerald-600 transition-colors duration-300 font-medium">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <p>&copy; 2024 Healthy Bites. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const loginBtn = document.getElementById('login-btn');
+        const loginModal = document.getElementById('login-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+
+        loginBtn.addEventListener('click', () => {
+            loginModal.classList.remove('hidden');
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            loginModal.classList.add('hidden');
+        });
+
+        // Hide modal when clicking outside of it
+        loginModal.addEventListener('click', (e) => {
+            if (e.target.id === 'login-modal') {
+                loginModal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

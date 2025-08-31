@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Fitness Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        .bg-hero {
+            /* Replace this URL with your own image link for the hero section */
+            background-image: url('https://images.unsplash.com/photo-1549068106-b024baf505e4?q=80&w=1740&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <!-- Hero Section -->
+    <header class="bg-hero min-h-[50vh] flex items-center justify-center text-center p-6 bg-cover bg-center">
+        <div class="bg-black bg-opacity-40 p-8 rounded-xl max-w-2xl mx-auto backdrop-blur-sm">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">Your Health and Fitness Journey Starts Here.</h1>
+            <p class="text-lg sm:text-xl text-slate-200 mb-6">Explore expert guides, workout plans, and nutrition tips to live your best life.</p>
+            <a href="#content" class="bg-lime-500 hover:bg-lime-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 transform hover:scale-105 inline-block">Explore Topics</a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main id="content" class="container mx-auto p-6 md:p-12">
+        <section class="mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-slate-800 mb-4">Discover Your Path to a Healthier You</h2>
+            <p class="text-center text-slate-600 max-w-3xl mx-auto">Whether you're looking to build muscle, improve your diet, or find inner peace, we have the resources to help you succeed.</p>
+        </section>
+
+        <!-- Topic Cards Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Strength Training -->
+            <div class="card bg-white rounded-xl overflow-hidden shadow-lg border border-slate-200 flex flex-col">
+                <!-- Replace this URL with your own image link -->
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b231b?q=80&w=1740&auto=format&fit=crop" alt="Strength Training" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-slate-800 mb-2">Strength Training</h3>
+                    <p class="text-slate-600 mb-4 flex-grow">
+                        Build muscle and boost your metabolism with our comprehensive strength training guides. From beginner routines to advanced lifting, we've got you covered.
+                    </p>
+                    <a href="#" class="inline-block self-start text-sm font-semibold text-lime-500 hover:text-lime-600 transition-colors duration-300">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Card 2: Cardio Workouts -->
+            <div class="card bg-white rounded-xl overflow-hidden shadow-lg border border-slate-200 flex flex-col">
+                <!-- Replace this URL with your own image link -->
+                <img src="https://images.unsplash.com/photo-1549476465-38ab0788d743?q=80&w=1740&auto=format&fit=crop" alt="Cardio Workouts" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-slate-800 mb-2">Cardio Workouts</h3>
+                    <p class="text-slate-600 mb-4 flex-grow">
+                        Improve your heart health and endurance with our effective cardio plans. Find the perfect routine, whether you prefer running, cycling, or HIIT.
+                    </p>
+                    <a href="#" class="inline-block self-start text-sm font-semibold text-lime-500 hover:text-lime-600 transition-colors duration-300">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Card 3: Nutrition Guides -->
+            <div class="card bg-white rounded-xl overflow-hidden shadow-lg border border-slate-200 flex flex-col">
+                <!-- Replace this URL with your own image link -->
+                <img src="https://images.unsplash.com/photo-1512621776951-a87f6cdb1807?q=80&w=1740&auto=format&fit=crop" alt="Nutrition Guides" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-slate-800 mb-2">Nutrition Guides</h3>
+                    <p class="text-slate-600 mb-4 flex-grow">
+                        Fuel your body with the right foods. Our nutrition guides provide simple, healthy meal ideas and tips for a balanced diet.
+                    </p>
+                    <a href="#" class="inline-block self-start text-sm font-semibold text-lime-500 hover:text-lime-600 transition-colors duration-300">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Card 4: Yoga & Flexibility -->
+            <div class="card bg-white rounded-xl overflow-hidden shadow-lg border border-slate-200 flex flex-col">
+                <!-- Replace this URL with your own image link -->
+                <img src="https://images.unsplash.com/photo-1506126616675-430c4273060a?q=80&w=1740&auto=format&fit=crop" alt="Yoga & Flexibility" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-slate-800 mb-2">Yoga & Flexibility</h3>
+                    <p class="text-slate-600 mb-4 flex-grow">
+                        Improve your mental and physical well-being with yoga. Learn poses and flows that enhance flexibility, reduce stress, and improve posture.
+                    </p>
+                    <a href="#" class="inline-block self-start text-sm font-semibold text-lime-500 hover:text-lime-600 transition-colors duration-300">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Card 5: Mental Wellness -->
+            <div class="card bg-white rounded-xl overflow-hidden shadow-lg border border-slate-200 flex flex-col">
+                <!-- Replace this URL with your own image link -->
+                <img src="https://images.unsplash.com/photo-1629854746684-257a07c0303b?q=80&w=1740&auto=format&fit=crop" alt="Mental Wellness" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-slate-800 mb-2">Mental Wellness</h3>
+                    <p class="text-slate-600 mb-4 flex-grow">
+                        Fitness isn't just physical. Discover mindfulness techniques, meditation guides, and tips for reducing anxiety to find balance in your life.
+                    </p>
+                    <a href="#" class="inline-block self-start text-sm font-semibold text-lime-500 hover:text-lime-600 transition-colors duration-300">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Card 6: Rest & Recovery -->
+            <div class="card bg-white rounded-xl overflow-hidden shadow-lg border border-slate-200 flex flex-col">
+                <!-- Replace this URL with your own image link -->
+                <img src="https://images.unsplash.com/photo-1635830911559-86c29b68a867?q=80&w=1740&auto=format&fit=crop" alt="Rest & Recovery" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-slate-800 mb-2">Rest & Recovery</h3>
+                    <p class="text-slate-600 mb-4 flex-grow">
+                        Rest is crucial for progress. Learn about the importance of sleep, active recovery, and proper rest days to optimize your fitness results.
+                    </p>
+                    <a href="#" class="inline-block self-start text-sm font-semibold text-lime-500 hover:text-lime-600 transition-colors duration-300">Read More &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-200 text-center p-6 mt-12">
+        <p>&copy; 2025 Health & Fitness Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Adventures</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2670&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .destination-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .destination-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md rounded-b-xl sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-gray-900">Wanderlust</a>
+            <div class="space-x-4 md:flex hidden">
+                <a href="#destinations" class="text-gray-600 hover:text-blue-600 transition duration-300">Destinations</a>
+                <a href="#tips" class="text-gray-600 hover:text-blue-600 transition duration-300">Travel Tips</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-gray-600 hover:text-blue-600 transition duration-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-2 rounded-b-xl border-t border-gray-200">
+            <a href="#destinations" class="block text-gray-600 hover:text-blue-600 transition duration-300">Destinations</a>
+            <a href="#tips" class="block text-gray-600 hover:text-blue-600 transition duration-300">Travel Tips</a>
+            <a href="#" class="block text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero text-white h-screen flex items-center justify-center text-center p-6">
+        <div class="bg-black bg-opacity-40 p-10 rounded-3xl shadow-lg max-w-2xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4">Explore The World</h1>
+            <p class="text-xl md:text-2xl mb-8">Your next great adventure is just a click away. Discover beautiful destinations, tips, and inspiration for your journey.</p>
+            <a href="#destinations" class="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition duration-300 shadow-md">Find Your Destination</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-10">Popular Destinations</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Destination Card 1 -->
+            <div class="destination-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                <img class="destination-image" src="https://worldcitiescultureforum.com/wp-content/uploads/2023/09/Paris1.jpg" alt="Paris, France">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Paris, France</h3>
+                    <p class="text-gray-600 text-sm">The "City of Light" is renowned for its art, fashion, culture, and cuisine. A must-visit for every traveler.</p>
+                </div>
+            </div>
+            <!-- Destination Card 2 -->
+            <div class="destination-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                <img class="destination-image" src="https://i0.wp.com/www.touristjapan.com/wp-content/uploads/2025/02/map-of-tokyo-japan-travel-scaled.jpg?fit=2560%2C1707&ssl=1" alt="Kyoto, Japan">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Kyoto, Japan</h3>
+                    <p class="text-gray-600 text-sm">Home to thousands of classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines and traditional wooden houses.</p>
+                </div>
+            </div>
+            <!-- Destination Card 3 -->
+            <div class="destination-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                <img class="destination-image" src="https://rtwin30days.com/wp-content/uploads/2012/02/Queenstown-Selects-87-1024x682.jpg" alt="Queenstown, New Zealand">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Queenstown, New Zealand</h3>
+                    <p class="text-gray-600 text-sm">Nestled beside Lake Wakatipu, this resort town is known for its stunning natural beauty and extreme sports.</p>
+                </div>
+            </div>
+             <!-- Destination Card 4 -->
+            <div class="destination-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                <img class="destination-image" src="https://lp-cms-production.imgix.net/2025-01/Shutterstock1520761370.jpg?auto=format,compress&q=72&w=1440&h=810&fit=crop" alt="Bora Bora">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Bora Bora, French Polynesia</h3>
+                    <p class="text-gray-600 text-sm">An island paradise known for its pristine turquoise waters, luxury resorts, and stunning coral reefs.</p>
+                </div>
+            </div>
+             <!-- Destination Card 5 -->
+            <div class="destination-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                <img class="destination-image" src="https://content.r9cdn.net/rimg/simg/2048/45618.jpg?width=1200&height=630&xhint=1020&yhint=831&crop=true" alt="Machu Picchu">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Machu Picchu, Peru</h3>
+                    <p class="text-gray-600 text-sm">A 15th-century Inca citadel set high in the Andes Mountains, it is one of the most famous archaeological sites in the world.</p>
+                </div>
+            </div>
+             <!-- Destination Card 6 -->
+            <div class="destination-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                <img class="destination-image" src="https://deih43ym53wif.cloudfront.net/large_zermatt-matterhorn-switzerland-shutterstock_1298208013_44fea015e5.jpeg" alt="The Swiss Alps">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">The Swiss Alps, Switzerland</h3>
+                    <p class="text-gray-600 text-sm">Known for their breathtaking landscapes, charming villages, and world-class skiing and hiking opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section id="tips" class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-10">Essential Travel Tips</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Budgeting Your Trip</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li>Create a detailed budget covering flights, accommodation, food, and activities.</li>
+                    <li>Look for off-season deals to save money.</li>
+                    <li>Utilize local transportation to cut costs.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Packing Smart</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li>Pack versatile clothing that can be layered.</li>
+                    <li>Always carry a universal power adapter.</li>
+                    <li>A small first-aid kit is essential for any trip.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 rounded-t-3xl mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Wanderlust Adventures. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

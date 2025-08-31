@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Genres Showcase</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 shadow-lg py-8 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-center text-indigo-400">The Movie Hub</h1>
+            <p class="text-center text-gray-400 mt-2 text-lg">Your Guide to Iconic Films and Genres</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Genre Section: Action -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-indigo-400 mb-8 pb-2 border-b-4 border-red-500 text-center uppercase tracking-wider">Action</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                <!-- Movie Card 1 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-red-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=The+Matrix" alt="The Matrix Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">The Matrix</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 1999</p>
+                    </div>
+                </div>
+                <!-- Movie Card 2 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-red-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=Mad+Max%3A+Fury+Road" alt="Mad Max: Fury Road Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">Mad Max: Fury Road</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 2015</p>
+                    </div>
+                </div>
+                <!-- Movie Card 3 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-red-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=Inception" alt="Inception Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">Inception</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 2010</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genre Section: Sci-Fi -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-indigo-400 mb-8 pb-2 border-b-4 border-purple-500 text-center uppercase tracking-wider">Sci-Fi</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                <!-- Movie Card 1 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-purple-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=Dune" alt="Dune Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">Dune</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 2021</p>
+                    </div>
+                </div>
+                <!-- Movie Card 2 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-purple-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=Blade+Runner+2049" alt="Blade Runner 2049 Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">Blade Runner 2049</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 2017</p>
+                    </div>
+                </div>
+                <!-- Movie Card 3 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-purple-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=Interstellar" alt="Interstellar Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">Interstellar</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 2014</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genre Section: Comedy -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-indigo-400 mb-8 pb-2 border-b-4 border-yellow-500 text-center uppercase tracking-wider">Comedy</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                <!-- Movie Card 1 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-yellow-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=Superbad" alt="Superbad Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">Superbad</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 2007</p>
+                    </div>
+                </div>
+                <!-- Movie Card 2 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-yellow-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=Bridesmaids" alt="Bridesmaids Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">Bridesmaids</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 2011</p>
+                    </div>
+                </div>
+                <!-- Movie Card 3 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-yellow-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=Step+Brothers" alt="Step Brothers Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">Step Brothers</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 2008</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genre Section: Horror -->
+        <section>
+            <h2 class="text-4xl font-bold text-indigo-400 mb-8 pb-2 border-b-4 border-teal-500 text-center uppercase tracking-wider">Horror</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                <!-- Movie Card 1 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-teal-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=Hereditary" alt="Hereditary Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">Hereditary</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 2018</p>
+                    </div>
+                </div>
+                <!-- Movie Card 2 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-teal-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=The+Conjuring" alt="The Conjuring Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">The Conjuring</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 2013</p>
+                    </div>
+                </div>
+                <!-- Movie Card 3 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl border-4 border-teal-500 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group overflow-hidden">
+                    <img src="https://placehold.co/400x600/262626/e5e7eb?text=Get+Out" alt="Get Out Movie Poster" class="w-full h-auto object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-500">
+                    <div class="p-5">
+                        <h3 class="font-bold text-2xl text-white">Get Out</h3>
+                        <p class="text-sm text-gray-400 mt-2">Released: 2017</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-400 py-6 mt-12">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2024 The Movie Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
